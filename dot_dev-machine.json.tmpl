@@ -31,7 +31,7 @@
     "Yubico.YubikeyManager",
     "Zoom.Zoom"
   ],
-  {{- elseif eq .chezmoi.hostname "jj-devvm" }}
+  {{- else if eq .chezmoi.hostname "jj-devvm" }}
   "wslDistributions": [
     {
       "name": "dev",
