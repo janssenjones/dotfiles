@@ -31,6 +31,25 @@
     "Yubico.YubikeyManager",
     "Zoom.Zoom"
   ],
+  {{- elseif eq .chezmoi.hostname "jj-devvm" }}
+  "wslDistributions": [
+    {
+      "name": "dev",
+      "source": "Ubuntu",
+      "default": true
+    }
+  ],
+  "chocolateyPackages": [
+    "Boxstarter",
+    "npiperelay"
+  ],
+  "wingetPackages": [
+    "GitHub.GitHubDesktop",
+    "Microsoft.OpenSSH.Beta",
+    "Microsoft.PowerToys",
+    "Microsoft.VisualStudioCode",
+    "Microsoft.WindowsTerminal"
+  ],
   {{- else }}
   "wingetPackages": [
     "7zip.7zip",
